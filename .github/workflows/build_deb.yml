@@ -13,5 +13,7 @@ jobs:
     steps:
       - name: Checkout this repository
         uses: actions/checkout@v2.3.4
+      - name:  Setup dependencies
+        uses: ichiro-its/ros2-build-debian-action@main
       - name: Build Debian packages
         uses: ichiro-its/ros2-build-debian-action@main
